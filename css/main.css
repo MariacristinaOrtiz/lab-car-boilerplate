@@ -56,10 +56,20 @@ height: 40rem;
   padding:1rem;
   margin: 1rem 0.5rem;
 }
-a, h1, h3, p, h2, h6, h4, .btn-driver {
+a, h1, h3, p, h2, h5, h4, .btn-driver {
   color: rgb(250, 250, 250);
 }
+/* ESTILO MODALES*/
+.background-gray-color {
+  background-color:rgb(170,170,170);
+}
+.background-black-color {
+  background-color: rgb(50,50,50);
+}
 @media (min-width:768px){
+  .first-background-image {
+    height: 60rem;
+  }
   .opacity {
     height: 20rem;
   }

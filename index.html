@@ -13,9 +13,9 @@
 <body>
 <header>
   <nav class="navbar-default menu-bar navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
      <div class="row">
-        <div class="col-xs-3 col-sm-push-9 col-md-push-9 ">
+        <div class="col-xs-3 col-sm-push-9  ">
           <div class="navbar-header navbar-right">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
               <span class="sr-only">Toggle navigation</span>
@@ -25,17 +25,17 @@
             </button>
           </div>
           </div>
-          <div class="col-xs-offset-2 col-sm-offset-0 col-xs-6 col-sm-pull-3 col-sm-4 col-md-5 col-lg-5">
+          <div class="col-xs-offset-2 col-sm-offset-1 col-xs-6 col-sm-pull-3 col-sm-3 col-md-4 col-lg-5">
             <a class="navbar-brand" href="#">
           <img class="img-responsive" alt="Brand" src="assets/images/logoForma.png">
         </a>
           </div>
-          <div class="col-sm-5 col-md-4 col-lg-4">
+          <div class="col-sm-5 col-md-4 col-lg-3">
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
-                <li><a href="#">Inicia Sesión</a></li>
+                <li data-toggle="modal" data-target="#logInModal"><a href="#">Inicia Sesión</a></li>
               </ul>
   </div>
   </nav>
@@ -54,13 +54,13 @@
           </div>
           <div class="col-sm-offset-7 col-sm-5 hidden-xs background-color">
 
-            <h2>Disfruta del viaje eres dueño de tu tiempo</h2>
+            <h1><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h1>
             <form>
-              <h4>Viaja con <img class="img-lab"src="assets/images/logoBlanco.png" alt=""></h4>
+              <h3>Viaja con <img class="img-lab"src="assets/images/logoBlanco.png" alt="img-lab"></h3>
               <div class="form-group">
-              <button type="input" class="btn btn-default"><strong>REGÍSTRATE</strong></button>
+              <button type="input" class="btn btn-default" data-toggle="modal" data-target="#registryModal2"><strong>REGÍSTRATE</strong></button>
               </div>
-<h6>o bien </h6>
+<h5>o bien </h5>
 <div class="form-group">
 <button type="input" class="btn btn-default"><strong>Conviertete en un conductor</strong></button>
 </div>
@@ -78,7 +78,7 @@
       <div class="col-xs-11 col-sm-10 col-md-8 col-border margin-column-phone ">
           <h2 class="hidden-sm hidden-md hidden-lg text-center ">La nueva app</h2>
         <figure class="col-sm-6">
-          <img src="assets/images/iPhone6Plus.png" alt="" class="img-responsive">
+          <img src="assets/images/iPhone6Plus.png" alt="img-responsive" class="img-responsive">
         </figure>
            <div class=" col-sm-6 col-md-5 hidden-xs margin-top-colum">
           <h2>Descarga la nueva app</h2>
@@ -100,7 +100,7 @@
       <div class="col-xs-12 col-sm-offset-8 col-sm-4 opacity ">
         <h2>Conduce cuando quieras</h2>
         <p>LabCar es un opción flexible para alcanzar tus metas financieras</p>
-        <button type="input" class="btn background-color "><strong class="btn-driver">Conviertete en un conductor</strong></button>
+        <button type="input" class="btn background-color " data-toggle="modal" data-target="#becomeDriverModal"><strong class="btn-driver">Conviertete en un conductor</strong></button>
       </div>
     </div>
   </div>
@@ -211,8 +211,185 @@
     </div>
   </div>
 </footer>
+
+<!---...........................MODALES.............................----->
+<!-- ...............FIRST MODAL: Login................-->
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content background-color col-border">
+      <div class="modal-body ">
+<div class="container-fluid">
+  <div class="row">
+    <div class="center-block col-sm-12">
+      <button type="button" class="close btn-lg center-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      <div class="form-group margin-top-colum ">
+       <figure >
+         <img class="img-responsive img-thumbnail center-block" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
+       </figure>
+       </div>
+<form class="form-horizontal col-sm-offset-2 col-sm-8">
+  <div class="input-group form-group">
+<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1" aria-hidden="true"></span>
+<input type="text" class="form-control input-lg" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1" aria-hidden="true"></span>
+<input type="text" class="form-control input-lg" placeholder="Password" aria-describedby="basic-addon1">
+</div>
+
+  <div class="form-group">
+      <button type="submit" class="btn btn-lg center-block btn-success">LOGING</button>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <h4>Forgot password?<small><a class="text-danger" href="#">click here</a></small></h4>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ...............SECOND MODAL: Registry................-->
+<div class="modal fade" id="registryModal2" tabindex="-1" role="dialog" aria-labelledby="registryModal2Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content background-gray-color">
+      <!--Body-->
+      <div class="modal-body">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 ">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+       <button type="button" class="btn btn-lg btn-block background-black-color btn-driver">Do you already have an account?</button>
+<p class="text-center">Or create an account</p>
+<form>
+  <div class="form-group col-sm-6">
+    <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
+  </div>
+  <div class="form-group col-sm-6">
+    <input type="lastname" class="form-control" id="exampleInputLastname1" placeholder="Lastname">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+  </div>
+  <div class="form-group">
+    <input type="phone" class="form-control" id="exampleInputPhone1" placeholder="Phone">
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <input type="city" class="form-control" id="exampleInputCity1" placeholder="City">
+  </div>
+  <div class="form-group">
+    <input type="(optional) invitation code" class="form-control" id="exampleInputInvitation code1" placeholder="(Optional) invitation code">
+  </div>
+  <div class="btn-group form-group">
+    <select class="form-control">
+      <option value="">How did you hear about us?</option>
+      <option value="">Friends</option>
+      <option value="">Family</option>
+      <option value="">Tv, radio</option>
+      <option value="">Social networks</option>
+    </select>
+</div>
+<div class="form-group">
+  <button type="submit" class="btn btn-lg btn-driver btn-primary btn-block">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ...............THIRD MODAL: Become a driver................-->
+<div class="modal fade" id="becomeDriverModal" tabindex="-1" role="dialog" aria-labelledby="becomeDriverModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content background-gray-color">
+      <!--ENCABEZADO-->
+
+      <!--body-->
+      <div class="modal-body">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 ">
+      <div class="form-group">
+        <button type="button" class="close btn-driver" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+
+
+      </div>
+<form>
+  <div class=" btn-gr form-group">
+    <label for="exampleInputVehicle1">Do you have a 4-door vehicle?</label>
+    <select class="form-control">
+      <option value="">Yes</option>
+      <option value="">No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputBrand1">Brand</label>
+    <select class="form-control">
+      <option value="">Choose the brand of the vehicle</option>
+      <option value="">Chevrolet</option>
+      <option value="">Audi</option>
+      <option value="">Peugeot</option>
+      <option value="">Volkswagen</option>
+      <option value="">Porsche</option>
+      <option value="">Lamborghini</option>
+    </select>
+    <p><small>Do not see your vehicle on this list? Send us an email to <a href="#">sociosmdv@labcar.com</a></small></p>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputModel1">Model</label>
+    <select class="form-control">
+      <option value="">Cross UP</option>
+      <option value="">Golf</option>
+      <option value="">Audi A1</option>
+      <option value="">Audi A3</option>
+      <option value="">Audi A1 Sportback</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputYear1">Year</label>
+    <select class="form-control">
+      <option value="">2017</option>
+      <option value="">2015</option>
+      <option value="">2014</option>
+      <option value="">2013</option>
+      <option value="">2012</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputRegistration1">Registration number</label>
+    <select class="form-control">
+      <option value="">P 4908</option>
+      <option value="">P 5653</option>
+      <option value="">P 7053</option>
+      <option value="">P 7654</option>
+      <option value="">P 5363</option>
+    </select>
+    <p><small>Vehicle registration information helps customers identify your vehicle</small></p>
+  </div>
+  <div class="form-group">
+<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) para los modal -->
    <script src="vendors/js/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="js/app.js"> </script>
 </body>
 </html>
