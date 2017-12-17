@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- ENCABEZADO-->
 <header>
   <nav class="navbar-default menu-bar navbar-fixed-top">
   <div class="container-fluid">
@@ -40,10 +41,11 @@
   </div>
   </nav>
 </header>
-
+<!-- FIRST SECTION: Primra Imagen de fondo,resgistro -->
 <section class="first-section">
   <div class="container-fluid">
     <div class="row  first-background-image background-image flex">
+         <!-- Primera columna: "Descarga la app", solo mobile -->
           <div class=" col-xs-offset-2 col-xs-10 hidden-sm hidden-md hidden-lg background-color">
             <div class="form-group">
             <h2><strong>Comienza a viajar con <img class="img-lab"src="assets/images/logoBlanco.png" alt=""></strong></h2>
@@ -52,6 +54,7 @@
             <button type="input" class="btn btn-default"><strong>Descarga el app</strong></button>
             </div>
           </div>
+          <!-- Segunda columna: Registro, solo tablet y desktop -->
           <div class="col-sm-offset-7 col-sm-5 hidden-xs background-color">
 
             <h1><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h1>
@@ -62,30 +65,33 @@
               </div>
 <h5>o bien </h5>
 <div class="form-group">
-<button type="input" class="btn btn-default"><strong>Conviertete en un conductor</strong></button>
+<button type="input" class="btn btn-default" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
 </div>
 </form>
 
           </div>
     </div>
   </div>
-
+<!-- SECOND SECTION: Imagen telefono móvil-->
 </section>
 <section class="second-section background-color">
   <div class="container-fluid">
     <div class="row">
       <br>
+      <!-- Primera columna: Imagen telefono móvil-->
       <div class="col-xs-11 col-sm-10 col-md-8 col-border margin-column-phone ">
           <h2 class="hidden-sm hidden-md hidden-lg text-center ">La nueva app</h2>
         <figure class="col-sm-6">
           <img src="assets/images/iPhone6Plus.png" alt="img-responsive" class="img-responsive">
         </figure>
+           <!-- Sub-columna: Texto solo visible en tablet, desktop-->
            <div class=" col-sm-6 col-md-5 hidden-xs margin-top-colum">
           <h2>Descarga la nueva app</h2>
           <p><small>La versión actualizada de labcar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</small></p>
           <p><small>Con solo tocar un botón, un auto llega a tu ubicación: Súbete y no te preocupes: Tu conductor sabe exactamente a donde ir.</small></p>
         </div>
       </div>
+      <!-- Segunda columna: Texto inferior, solo visible en mobile-->
       <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
         <h4>Llega a tu destino aún más rápido</h4>
       </div>
@@ -93,7 +99,7 @@
     <br class="hidden-xs">
   </div>
 </section>
-
+<!-- THIRD SECTION: Corviertete en conductor-->
 <section class="third-section ">
   <div class="container-fluid second-background-image background-image">
     <div class="row ">
@@ -105,15 +111,17 @@
     </div>
   </div>
 </section>
-
+<!-- FOUR SECTION: Tarifa y mapa-->
 <section class="four-section">
   <div class="container-fluid background-color ">
     <div class="row">
+      <!-- Primera columna: Tarifa-->
       <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-4 margin-top-colum">
         <div>
         <h2>Tarifa</h2>
         <p>Consulta las tarifa LabCar aquí</p>
         </div>
+        <!-- Formulario de ruta-->
         <form class="form-horizontal">
   <div class="form-group">
     <span class="col-xs-1"><img src="assets/images/shape.png" alt=""></span>
@@ -134,6 +142,7 @@
   </div>
 </form>
       </div>
+      <!-- Segunda columna: Mapa-->
       <div class="col-xs-12 col-md-offset-1 col-sm-5 col-md-5 ">
         <figure class="col-border fig-padding">
           <iframe class="iframe-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.3775091507634!2d-77.009065941913!3d-12.128907297853162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ff88c5ffb5%3A0x3bed721963f4e924!2sBenavides%2C+Miraflores+15048!5e0!3m2!1ses!2spe!4v1513384512528" width="600" height="400" frameborder="1" style="border:0" allowfullscreen></iframe>
@@ -142,11 +151,12 @@
     </div>
   </div>
 </section>
-
+<!--FOOTER-->
 <footer>
   <div role="navigator"class="container-fluid navbar-inverse">
     <div class="row">
       <br>
+      <!--Primera Fila: Imagen del logo-->
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -155,7 +165,7 @@
         </div>
         <hr>
       </div>
-
+      <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
       <div class="container">
         <div class="row">
           <div class="col-xs-12 ">
@@ -200,7 +210,7 @@
         </div>
         <hr>
       </div>
-
+       <!--Tercera Fila: Copyrigth-->
       <div class="container">
         <div class=" row">
           <div class="col-xs-12">
