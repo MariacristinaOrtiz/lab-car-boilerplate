@@ -8,19 +8,12 @@ body {
   padding-top: 70px;
   font-size: 16px;
 }
-
-/*VERSIÓN MOBILE*/
-.menu-bar{
-  background-color: #fff;
-}
+/*VERSIÓN MOBILE TABLET Y DESKTOP*/
+/* ESTILOS REUTILIZABLES*/
 .background-image {
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
-}
-.first-background-image {
-  background-image:url(../assets/images/taxi.jpg);
-  height: 50rem;
 }
 .background-color {
 background-color:rgb(255, 180, 0);
@@ -39,6 +32,14 @@ background-color:rgb(255, 180, 0);
 }
 .margin-column-phone {
   margin:0 1.4rem;
+}
+/*.... FIN DE ESTILOS REUTILIZABLES...*/
+.menu-bar{
+  background-color: #fff;
+}
+.first-background-image {
+  background-image:url(../assets/images/taxi.jpg);
+  height: 50rem;
 }
 .second-background-image {
   background-image:url(../assets/images/conduce.jpg);
@@ -66,6 +67,8 @@ a, h1, h3, p, h2, h5, h4, .btn-driver {
 .background-black-color {
   background-color: rgb(50,50,50);
 }
+
+/* ESTILOS SOLO PARA TABLET Y DESKTOP*/
 @media (min-width:768px){
   .first-background-image {
     height: 60rem;
